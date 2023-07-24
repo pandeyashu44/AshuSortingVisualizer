@@ -1,0 +1,235 @@
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: large;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+h5 {
+	display: inline;
+	position: relative;
+	font: 100px Helvetica, Sans-Serif;
+	letter-spacing: -5px;
+	color: #D6D9FF; 
+}
+
+.button {
+  background-color: #79c4e7; /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer; 
+}
+
+.button3 {
+  border-radius: 8px;
+  padding: 8px 15px;
+  margin: 5px;
+}
+
+nav {
+  background-color: #1e3d59;
+  color: white;
+  display: -ms-grid;
+  display: grid;
+  grid-template-areas: "title array-inputs" "algo algo";
+  -ms-grid-columns: 30% 60%;
+      grid-template-columns: 30% 60%;
+  -webkit-column-gap: 10%;
+          column-gap: 15%;
+  padding: 0% 5%;
+
+  font-size: 30px;
+    min-height: 53px;
+    border: none;
+    border-radius: 0px;
+}
+
+
+
+.algos{
+  grid-area: algo;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.title{
+  grid-area: title;
+}
+
+.array-inputs{
+  grid-area: array-inputs;
+}
+
+nav .array-inputs {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 60% 40%;
+      grid-template-columns: 60% 40%;
+  place-content: center;
+  padding: 5% 0%;
+  font-size: 14px;
+    padding: 15px 0px;
+    padding-top: 15px;
+    padding-right: 21px;
+    padding-bottom: 15px;
+    line-height: 23px;
+    font-weight: 700;
+}
+
+nav .array-inputs #a_size {
+    padding-top: 15px;
+    padding-right: 21px;
+    padding-bottom: 18px;
+    padding-left: 21px;
+    line-height: 21px;
+    font-weight: 700;
+}
+
+nav .array-inputs #a_speed {
+    padding-top: 15px;
+    padding-right: 21px;
+    padding-bottom: 18px;
+    padding-left: 21px;
+    line-height: 21px;
+    font-weight: 700;
+}
+
+nav .array-inputs #a_generate {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 8px 0px;
+  cursor: pointer;
+  border-radius: 8px;
+  background-color: rgb(29, 180, 89);
+  padding: 7px 15px;
+}
+
+nav .array-inputs #a_generate:hover {
+  cursor: pointer;
+}
+
+nav .header_right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+nav .header_right .nav-heading {
+  display: inline-block;
+  font-size: xxx-large;
+  padding: 3% 0%;
+}
+
+nav .header_right .algos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (16.66667%);
+      grid-template-columns: repeat(6, 16.66667%);
+  place-content: center;
+  padding: 2% 0%;
+}
+
+nav .header_right .algos button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  outline: none;
+  padding: 5% 0%;
+  font-size: x-large;
+}
+
+nav .header_right .algos button:hover {
+  background-color: #F6B4F7;
+  cursor: pointer;
+}
+
+nav .header_right .algos .butt_locked {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+nav .header_right .algos .butt_locked:hover {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+nav .header_right .algos .butt_selected {
+  background-color: green;
+  color: #A8D5BAFF;
+}
+
+nav .header_right .algos .butt_selected:hover {
+  background-color: white;
+  cursor: pointer;
+}
+
+nav .header_right .algos .butt_unselected:hover {
+  background-color: #8BBEE8FF;
+  cursor: pointer;
+}
+
+section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 60% 20%;
+      grid-template-columns: 20% 60% 20%;
+}
+
+section #Info_Cont1 {
+  padding: 20%;
+}
+
+section #array_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 70vh;
+}
+
+section #Info_Cont2 {
+  padding: 20%;
+}
+
+.hide {
+  display: none;
+}
+
+.butt_selected{
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+.butt_unselected{
+  padding: 8px 15px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.butt_locked{
+  padding: 8px 15px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+
